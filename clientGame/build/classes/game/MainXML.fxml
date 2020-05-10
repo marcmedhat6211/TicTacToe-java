@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="600.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.MainXMLController">
+    <children>
+        <ImageView id="#bg" fitHeight="600.0" fitWidth="600.0" pickOnBounds="true">
+            <image>
+                <Image url="@img/gif2.gif" />
+            </image>
+        </ImageView>
+        <Pane id="btnbg" layoutX="114.0" layoutY="175.0" prefHeight="370.0" prefWidth="372.0" style="-fx-border-radius: 50; -fx-background-radius: 15;" stylesheets="@list.css">
+            <children>
+                <Button id="btn" fx:id="onePlayerBtn" layoutX="96.0" layoutY="61.0" mnemonicParsing="false" onAction="#goToAIScene" prefHeight="93.0" prefWidth="378.0" text="One Player">
+               <effect>
+                  <DropShadow color="#800e5f" height="20.0" radius="9.5" spread="0.21" width="20.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+                <Button id="btn" fx:id="twoPlayerBtn" layoutX="96.0" layoutY="161.0" mnemonicParsing="false" onAction="#goToTowPlayerScene" prefHeight="76.0" prefWidth="357.0" text="Two Player" textFill="#ff892e">
+               <effect>
+                  <DropShadow color="#800e5f" height="20.0" radius="9.5" spread="0.21" width="20.0" />
+               </effect>
+                <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>         
+                 
+                
+            
+                <Button id="btn" fx:id="replays" layoutX="96.0" layoutY="261.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goToList" prefHeight="79.0" prefWidth="299.0" text="Replays" textFill="#ff892e">
+               <effect>
+                  <DropShadow color="#800e5f" height="20.0" radius="9.5" spread="0.21" width="20.0" />
+               </effect>
+                <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            </children>
+        </Pane>
+      <ImageView fitHeight="200.0" fitWidth="467.0" layoutX="67.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="67.0" AnchorPane.rightAnchor="66.0" AnchorPane.topAnchor="50.0">
+              <image>
+                  <Image url="@img/logo.png" />
+              </image>
+          </ImageView><!--
+      -->
+    </children>
+</AnchorPane>

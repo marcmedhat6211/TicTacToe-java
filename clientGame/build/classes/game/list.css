@@ -1,0 +1,74 @@
+#pg {
+    -fx-background-image: url("./img/bg.jpg");
+/*    -fx-background-repeat: stretch;*/
+    /*        -fx-background-size: 500 500;*/
+/*    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);*/
+/*    -fx-background-size: cover;*/
+}
+#btnbg{
+           -fx-background-color: rgba(255, 255, 255, .6); 
+
+}
+#btn {
+    -fx-background-color: #ff00b3;
+/*    -fx-border-style: solid;
+    -fx-border-size:5;
+    -fx-border-color:#bd158d;*/
+    -fx-border-radius: 14;
+    -fx-text-fill: #fff;
+    -fx-font-family: "Bauhaus 93";
+    -fx-font-size: 26;
+    -fx-background-radius: 15;
+    -fx-pref-height: 65.0;
+    -fx-pref-width: 180.0;
+}
+
+#btn:hover,#btnn:hover {
+   -fx-background-color:#00b7ff;
+    -fx-border-style: dotted;
+    -fx-border-color: #fff;
+    -fx-text-fill: #fff;
+    -fx-border-width: 5;
+    -fx-border-radius: 8;
+    -fx-pref-height:60.0;
+    -fx-pref-width:250.0;
+    -fx-translate-x: -30;
+}
+#btnn{
+        -fx-background-color: #ff00b3;
+/*    -fx-border-style: solid;
+    -fx-border-size:5;
+    -fx-border-color:#bd158d;*/
+    -fx-border-radius: 14;
+    -fx-text-fill: #fff;
+    -fx-font-family: "Bauhaus 93";
+    -fx-font-size: 22;
+    -fx-background-radius: 15;
+    -fx-pref-height: 65.0;
+    -fx-pref-width: 180.0;
+}
+.list-cell:filled:selected:focused,
+.list-cell:filled:selected {
+    -fx-background-color: #e5e5e5;
+    -fx-font-weight: bold
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #dedfe0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-font-size: 18.0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.list-view {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}

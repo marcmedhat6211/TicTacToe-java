@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.net.*?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.Cursor?>
+
+<AnchorPane fx:id="difficultyPane" prefHeight="650.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.DifficultyFXMLController">
+   <stylesheets>
+        <URL value="@list.css"/>
+    </stylesheets>
+    
+    <children>
+      <ImageView id="#bg" fitHeight="600.0" fitWidth="600.0" pickOnBounds="true">
+            <image>
+                <Image url="@img/gif2.gif" />
+            </image>
+        </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="467.0" layoutX="67.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="67.0" AnchorPane.rightAnchor="66.0" AnchorPane.topAnchor="50.0">
+              <image>
+                  <Image url="@img/logo.png" />
+              </image>
+      </ImageView>
+      <Pane id="btnbg" layoutX="114.0" layoutY="140.0" prefHeight="350.0" prefWidth="372.0" style="-fx-border-radius: 50; -fx-background-radius: 15;" stylesheets="@list.css">
+         <children>
+            <Button fx:id="hardId" id="btn" layoutX="96.0" layoutY="241.0" mnemonicParsing="false" onAction="#chooseHard" prefHeight="93.0" prefWidth="378.0"  text="Hard" textFill="#ff892e">
+               <effect>
+                  <DropShadow color="#800e5f" height="20.0" radius="9.5" spread="0.21" width="20.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="easyId" id="btn" layoutX="96.0" layoutY="41.0" mnemonicParsing="false" onAction="#chooseEasy" prefHeight="93.0" prefWidth="378.0"  text="Easy" textFill="#ff892e" wrapText="true">
+               <effect>
+                  <DropShadow color="#800e5f" height="20.0" radius="9.5" spread="0.21" width="20.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="hardId1" id="btn" layoutX="96.0" layoutY="141.0" mnemonicParsing="false" onAction="#chooseHard" prefHeight="93.0" prefWidth="432.0"  text="Meduim" textFill="#ff892e" wrapText="true">
+               <effect>
+                  <DropShadow color="#800e5f" height="20.0" radius="9.5" spread="0.21" width="20.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Button fx:id="backBtn" id="btn" layoutX="50" layoutY="520.0" mnemonicParsing="false" onAction="#goToMainMenu" prefHeight="93.0" prefWidth="286.0" text="Back" textFill="#ff892e">
+         <effect>
+                  <DropShadow color="#800e5f" height="20.0" radius="9.5" spread="0.21" width="20.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+      </Button>
+   </children>
+</AnchorPane>

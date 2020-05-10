@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" fx:id="onOfPane" prefHeight="650.0" prefWidth="650.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.OfOnChoiceController">
+    <stylesheets>
+        <URL value="@list.css" />
+    </stylesheets>
+    
+    <ImageView id="#bg" fitHeight="600.0" fitWidth="600.0" pickOnBounds="true">
+            <image>
+                <Image url="@img/gif2.gif" />
+            </image>
+        </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="467.0" layoutX="67.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="67.0" AnchorPane.rightAnchor="136.0" AnchorPane.topAnchor="30.0">
+              <image>
+                  <Image url="@img/logo.png" />
+              </image>
+      </ImageView>
+   <Pane id="btnbg" layoutX="114.0" layoutY="175.0" prefHeight="370.0" prefWidth="372.0" style="-fx-border-radius: 50; -fx-background-radius: 15;">
+      <children>
+          <Button id="btn" fx:id="onlineBtn" layoutX="95.0" layoutY="45.0" mnemonicParsing="false" onAction="#goOnlineChoice" text="Online">
+              <effect>
+                  <DropShadow color="#800e5f" height="20.0" radius="9.5" spread="0.21" width="20.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+          </Button>
+         <Button id="btn" fx:id="offlineBtn" layoutX="95.0" layoutY="150.0" mnemonicParsing="false" onAction="#goOfflineGame" text="Offline">
+              <effect>
+                  <DropShadow color="#800e5f" height="20.0" radius="9.5" spread="0.21" width="20.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+          </Button>
+         <Button id="btn" fx:id="backBtn" layoutX="95.0" layoutY="255.0" mnemonicParsing="false" onAction="#goMain" text="Back">
+              <effect>
+                  <DropShadow color="#800e5f" height="20.0" radius="9.5" spread="0.21" width="20.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+         </Button>
+      </children>
+   </Pane>
+</AnchorPane>
